@@ -46,10 +46,10 @@ const BlogPosts = {
       this.posts.splice(postIndex, 1);
     }
   },
-  update: function(updatedPost) {
-    const {id} = updatedPost;
+  update: function(idToUpdate, updatedPost) {
+    // const id = idToUpdate;
     const postIndex = this.posts.findIndex(
-      post => post.id === updatedPost.id);
+      post => post.id === idToUpdate);
     if (postIndex === -1) {
       throw new StorageException(
         `Can't update item \`${id}\` because doesn't exist.`)
