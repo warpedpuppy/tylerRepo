@@ -1,0 +1,9 @@
+language: node_js
+node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: lPpOrerQJomxkXhUnIdXCJ6sHcWUVYI1+/hsvrHWOvzK38yQKytSyGaYMQ+Iy3b8OjUeH030C8GjaBFInlbbtHI+0i4uX8BN0y5LnKdLbV7+Y+ByUM094nD0Of9XoNThItXcjUNHpxw5CcoUVTbom/x5Z2trk6Ej97ZrEhp39/5ZSA6VpasfvYTPykPH/EbU8qeWb9xAgrK4jdxjpCATSoIrvPYFHXebw78wdJGS8cIjYRsDcDjJX7vLLu7WLskLcNWEjttv/DdIlCLJHMMH4MQ91M8PFs66g541N3MDX6LMhyB8TGQiRo9mQcuQDIak4UE/eYUhHNG9P2gbxOIJKsry2qFL328KXp/LSlfxqZcdA9lFbjJ9k/78SQRpA7Zwshz/0wmvMdsfJO/5fpSLzwlIPcbSEofNHBu29KHSI3M7GacQQtzXEwFkpKvbvozxVlmNPPbk7KOzGXnaFW7dxn4DD0qN819kcNCfQKSk9Z+yNJ1sMnCoiCGPR5++NG2kAz99VKOqRW9OgtdjkosZMmyKRs5ImkUDsl2SA0qhOMJQrdy/fRMOTOirVmKIn9Pp3jJ32ZwLljdQK7btyG6lDOAfUUAtimxAdlWzw8rQvuJuKryZaDrM0n7NZViqzlkwtTmJPszFYBsrafwQWBLzgVyRp8DaE/Wt6ixKV9xM0rM=
+  app: secure-brook-76653
+  on:
+    repo: gotylergo/blog-api
