@@ -52,7 +52,7 @@ const BlogPosts = {
       post => post.id === idToUpdate);
     if (postIndex === -1) {
       throw new StorageException(
-        `Can't update item \`${id}\` because doesn't exist.`)
+        `Can't update item ${idToUpdate} because doesn't exist.`)
     }
     this.posts[postIndex] = Object.assign(
       this.posts[postIndex], updatedPost);
