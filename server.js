@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const router = express.Router();
 const blogRouter = require('./blogRouter');
+const mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
 
 app.use('/blog-posts', blogRouter);
 
