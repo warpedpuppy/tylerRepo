@@ -4,6 +4,8 @@ const router = express.Router();
 const blogRouter = require('./blogRouter');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
+const {PORT, DATABASE_URL} = require('./config');
+const {BlogPosts} = require('./models');
 
 app.use('/blog-posts', blogRouter);
 
@@ -11,8 +13,8 @@ let server;
 
 function runServer() {
     return new Promise((resolve, reject) => {
-        server = app.listen(3000, () => {
-            console.log('The app is listening on port 3000!');
+        server = app.listen(DATABASE_URL, () => {
+            console.log(`The app is listening on port ${DATABASE_URL}!`);
             resolve(server);
         }).on('error', err => {
             reject(err)
